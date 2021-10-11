@@ -79,14 +79,14 @@ cd ~/Downloads/
 
 echo "Google Chrome"
 
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+wget -c https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 
 
 echo "----------------------------------------------------------------------------------------------------"
 
 echo "Veracrypt"
 
-wget https://launchpad.net/veracrypt/trunk/1.24-update7/+download/veracrypt-1.24-Update7-Ubuntu-21.04-amd64.deb
+wget -c https://launchpad.net/veracrypt/trunk/1.24-update7/+download/veracrypt-1.24-Update7-Ubuntu-21.04-amd64.deb
 
 
 echo "----------------------------------------------------------------------------------------------------"
@@ -94,7 +94,7 @@ echo "--------------------------------------------------------------------------
 
 echo "Genymotion"
 
-wget https://dl.genymotion.com/releases/genymotion-3.2.1/genymotion-3.2.1-linux_x64.bin
+wget -c https://dl.genymotion.com/releases/genymotion-3.2.1/genymotion-3.2.1-linux_x64.bin
 sudo chmod +x genymotion-3.2.1-linux_x64.bin
 ./genymotion-3.2.1-linux_x64.bin
 
@@ -103,27 +103,27 @@ echo "--------------------------------------------------------------------------
 
 echo "Microsoft Edge"
 
-wget https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-beta/microsoft-edge-beta_92.0.902.40-1_amd64.deb
+wget -c https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-beta/microsoft-edge-beta_92.0.902.40-1_amd64.deb
 
 echo "----------------------------------------------------------------------------------------------------"
 
 
 echo "Dropbox"
 
-wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2020.03.04_amd64.deb
+wget -c https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2020.03.04_amd64.deb
 
 echo "----------------------------------------------------------------------------------------------------"
 
 
 
 echo "Teamviewer"
-wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
+wget -c https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
 
 echo "----------------------------------------------------------------------------------------------------"
 
 
 echo "Private Internet Access"
-wget https://installers.privateinternetaccess.com/download/pia-linux-2.9-06393.run
+wget -c https://installers.privateinternetaccess.com/download/pia-linux-2.9-06393.run
 sudo chmod +x pia-linux-2.9-06393.run
 ./pia-linux-2.9-06393.run
 
