@@ -41,9 +41,9 @@ echo "--------------------------------------------------------------------------
 
 echo "\033[0;31m ----- Instalando pacotes Flatpak: AnyDesk, Discord, Czkawka, GreenWithEnvy, Spotify, Steam, DBeaver Community, ONLYOFFICE Desktop Editors, qBittorrent, Telegram, VLC  ----- \033[0m"
 
-flatpak install flathub org.telegram.desktop org.qbittorrent.qBittorrent org.videolan.VLC org.onlyoffice.desktopeditors \
+flatpak install --system flathub org.telegram.desktop org.qbittorrent.qBittorrent org.videolan.VLC org.onlyoffice.desktopeditors \
 io.dbeaver.DBeaverCommunity com.valvesoftware.Steam com.leinardi.gwe \
-com.github.qarmin.czkawka com.discordapp.Discord com.anydesk.Anydesk com.vscodium.codium
+com.github.qarmin.czkawka com.discordapp.Discord com.anydesk.Anydesk com.vscodium.codium -y
 
 echo "----------------------------------------------------------------------------------------------------"
 <<'/REPOSITORIOS'
