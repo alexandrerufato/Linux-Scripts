@@ -135,4 +135,7 @@ sudo dpkg -i *.deb
 sudo apt update
 sudo apt install -f -y
 
-echo echo "----------------------------------------CONCLUÍDO----------------------------------------"
+echo "Fazendo Limpeza no sistema"
+sudo apt update -y && sudo apt autoremove -y
+
+echo "----------------------------------------CONCLUÍDO----------------------------------------"
