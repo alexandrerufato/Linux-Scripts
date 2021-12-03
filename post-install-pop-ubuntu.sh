@@ -15,18 +15,18 @@ sudo apt update ; sudo apt upgrade -y
 
 echo "----------------------------------------------------------------------------------------------------"
 
-<<'/FLATPAK'
+
 # instalando o Flatpak e adicionando o repositório
 
 echo "\033[0;31m ----- Instalando Flatpak e adicionando o repositório do Flathub... ----- \033[0m"
 
 sudo apt install flatpak -y
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-/FLATPAK
+
 
 echo "----------------------------------------------------------------------------------------------------"
 
-<<'/GNOME_STORE'
+<<'/GNOME_STORE' #comentado pois não é necessário no pop_os
 # instalando a loja Gnome Software e o plugin para Flatpak
 
 echo "\033[0;31m ----- Instalando a Gnome Software e o plugin para Flatpak... ----- \033[0m"
@@ -43,10 +43,10 @@ echo "\033[0;31m ----- Instalando pacotes Flatpak: AnyDesk, Discord, Czkawka, Gr
 
 flatpak install --system flathub org.telegram.desktop org.qbittorrent.qBittorrent org.videolan.VLC org.onlyoffice.desktopeditors \
 io.dbeaver.DBeaverCommunity com.valvesoftware.Steam com.leinardi.gwe \
-com.github.qarmin.czkawka com.discordapp.Discord com.anydesk.Anydesk com.vscodium.codium -y
+com.github.qarmin.czkawka com.discordapp.Discord com.anydesk.Anydesk com.vscodium.codium com.spotify.Client -y
 
 echo "----------------------------------------------------------------------------------------------------"
-<<'/REPOSITORIOS'
+<<'/REPOSITORIOS' #desnecessário pois já existe versão flatpak acima
 
 echo "\033[0;31m ----- Adicionando repositórios... ----- \033[0m"
 
@@ -92,7 +92,7 @@ wget -c https://launchpad.net/veracrypt/trunk/1.24-update7/+download/veracrypt-1
 echo "----------------------------------------------------------------------------------------------------"
 
 
-echo "Genymotion"
+echo "Genymotion" #provavelmente já está desatualizado pois o link especifica uma versão
 
 wget -c https://dl.genymotion.com/releases/genymotion-3.2.1/genymotion-3.2.1-linux_x64.bin
 sudo chmod +x genymotion-3.2.1-linux_x64.bin
@@ -122,7 +122,7 @@ wget -c https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
 echo "----------------------------------------------------------------------------------------------------"
 
 
-echo "Private Internet Access"
+echo "Private Internet Access" #provavelmente já está desatualizado pois o link especifica uma versão
 wget -c https://installers.privateinternetaccess.com/download/pia-linux-2.9-06393.run
 sudo chmod +x pia-linux-2.9-06393.run
 ./pia-linux-2.9-06393.run
