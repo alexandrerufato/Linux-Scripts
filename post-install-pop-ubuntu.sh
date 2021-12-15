@@ -67,8 +67,8 @@ echo "\033[0;31m ----- Instalando programas... ----- \033[0m"
 
 sudo apt update 
 
-echo "Flameshot, virtualbox, scrcpy "
-sudo apt install flameshot  virtualbox virtualbox-guest-utils scrcpy -y
+echo "Flameshot, virtualbox, scrcpy, gnome tweaks"
+sudo apt install flameshot  virtualbox virtualbox-guest-utils scrcpy gnome-tweaks  -y
 
 echo "----------------------------------------------------------------------------------------------------"
 
@@ -137,5 +137,29 @@ sudo apt install -f -y
 
 echo "Fazendo Limpeza no sistema"
 sudo apt update -y && sudo apt autoremove -y
+
+echo "----------------------------------------------------------------------------------------------------"
+
+echo "Configurando Coolbits"
+
+sudo nvidia-xconfig
+
+sudo nvidia-xconfig --cool-bits=4
+
+
+echo "----------------------------------------------------------------------------------------------------"
+
+echo "Instalando Snaps exclusivamente para usar Skype -- Thanks Microsoft"
+
+sudo apt install snapd
+
+sudo snap install skype
+
+echo "----------------------------------------------------------------------------------------------------"
+
+echo "Arrumando o Edge no Linux para atualização automática -- Thanks Microsoft"
+
+curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+
 
 echo "----------------------------------------CONCLUÍDO----------------------------------------"
