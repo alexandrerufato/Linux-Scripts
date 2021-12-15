@@ -162,4 +162,11 @@ echo "Arrumando o Edge no Linux para atualização automática -- Thanks Microso
 curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
 
 
+echo "----------------------------------------------------------------------------------------------------"
+
+echo "Exibindo UUID para inclusão no fstab"
+
+sudo blkid | grep Dados
+
+
 echo "----------------------------------------CONCLUÍDO----------------------------------------"
